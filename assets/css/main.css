@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -429,10 +430,73 @@ body {
   -webkit-tap-highlight-color: #FFF498; }
 
 body {
-  background: yellow;
+  background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+header nav a, header .kicker, footer .lockup a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+header {
+  height: 450px;
+  background: url(../img/galway.JPG) center center;
+  background-size: cover; }
+  header .logo {
+    height: 50px;
+    width: 50px;
+    background: #999;
+    float: left;
+    margin: 10px 0 0 30px; }
+  header nav {
+    float: right;
+    margin: 30px 30px 30px; }
+    header nav a {
+      display: inline-block;
+      margin-left: 20px;
+      color: rgba(0, 0, 0, 0.7); }
+      header nav a:hover {
+        color: black; }
+  header h1 {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05cm;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 100px; }
+    header h1 span {
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: white solid 10px; }
+  header .kicker {
+    text-align: center;
+    line-height: 1; }
+
+footer {
+  background: url(../img/galway.JPG) center center;
+  background-size: cover; }
+  footer .lockup {
+    padding: 70px; }
+    footer .lockup::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer .lockup .content-wrap {
+      float: left; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4); }
+    footer .lockup a {
+      color: rgba(0, 0, 0, 0.7);
+      display: inline-block;
+      margin-right: 30px; }
