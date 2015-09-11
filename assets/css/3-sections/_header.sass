@@ -16,7 +16,7 @@ header
     a
       display: inline-block
       margin-left: 20px
-      color: rgba(0, 0, 0,0.7)
+      color: rgba(0, 0, 0,0.5)
       @extend %small-bold
 
       &:hover
@@ -27,7 +27,7 @@ header
     font:
       size: 72px
       weight: 700
-    color: white
+    color: rgba(0, 0, 0,0.5)
     text-transform: uppercase
     letter-spacing: 0.05cm
     margin-bottom: 20px
@@ -36,9 +36,14 @@ header
     span
       display: inline-block
       padding: 0.2em 0.5em
-      border: white solid 10px
+      border: rgba(0, 0, 0,0.5) solid 10px
+
+    &:hover
+      color: rgba(0,0,0,0.4)
+
 
   .kicker
     text-align: center
     @extend %small-bold
     line-height: 1
+    color: rgba(0,0,0,0.5)
