@@ -2,6 +2,7 @@ h2
     @extend %small-bold
     color: $sunset
     text-align: center
+    padding: 100px 0 30px
 
 .about-lock
   max-width:780px
@@ -14,3 +15,49 @@ h2
     +size(200px)
     border-radius: 50%
     background: url(../img/android.JPG)
+    margin: 30px
+    order: 3
+
+  .icon1
+    +size(100px)
+    border-radius: 5%
+    background: url(../img/1-cmd.JPG)
+    order: 1
+  .icon2
+    +size(100px)
+    border-radius: 5%
+    background: url(../img/2-cloud.JPG)
+    order: 2
+
+  .icon3
+    +size(100px)
+    border-radius: 5%
+    background: url(../img/3-cllog.JPG)
+    order: 4
+  .icon4
+    +size(100px)
+    border-radius: 5%
+    background: url(../img/4-connect.JPG)
+    order: 5
+
+@media screen and (max-width:650px)
+  .about-lock
+    display:block
+    text-align: center
+  div
+    display: inline-block
+    margin: 10px
+  .face-img
+    display: flex
+    background-position: center center
+    background-repeat: no-repeat
+    width: auto
+    margin-bottom: 30px
+
+.blurb
+  max-width: 620px
+  padding: 0 15px
+  margin: 50px auto
+  font-size: 25px
+  text-align: center
+  font-weight: 30
