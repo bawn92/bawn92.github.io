@@ -1,0 +1,38 @@
+.section-contact
+  background: #e5eaee
+  text-align: center
+
+.social-links
+  max-width: 700px
+  margin: 0px auto 50px
+  +display(flex)
+  +justify-content(space-around)
+
+  .glyph-icon
+    &:hover
+      +transform(scale(1.2))
+
+  .glyph-icon:before
+    display: block
+    font-size: 60px
+    line-height: 70px
+    color: #c99065
+    +transition()
+    margin-left: 0
+
+
+
+.bar
+  width: 250px
+  height: 0px
+  margin: 0px auto 70px
+  border-top: 4px solid #c99065
+
+
+.biglink
+  display: inline-block
+  margin-bottom: 70px
+  color: #c99065
+  font:
+    size: 72px
+    weight: 300

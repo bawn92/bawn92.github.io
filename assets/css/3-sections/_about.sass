@@ -12,27 +12,26 @@
     margin: 30px
     +order(3)
 
-  .icon1
-    +size(100px)
-    border-radius: 5%
-    background: url(../img/1-cmd.JPG)
+  .flaticon-cogwheel28
     +order(1)
-  .icon2
-    +size(100px)
-    border-radius: 5%
-    background: url(../img/2-cloud.JPG)
+  .flaticon-computer1
     +order(2)
-
-  .icon3
-    +size(100px)
-    border-radius: 5%
-    background: url(../img/3-cllog.JPG)
+  .flaticon-hosting
     +order(4)
-  .icon4
-    +size(100px)
-    border-radius: 5%
-    background: url(../img/4-connect.JPG)
+  .flaticon-computers13
     +order(5)
+
+  .glyph-icon
+    &:hover
+      +transform(scale(1.2))
+
+  .glyph-icon:before
+    display: block
+    font-size: 60px
+    line-height: 70px
+    color: #c99065
+    +transition()
+    margin-left: 0
 
 @media screen and (max-width:650px)
   .about-lock
