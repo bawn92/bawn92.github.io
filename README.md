@@ -3,7 +3,7 @@
 Personal Blog
 =============================
 
-[Live Website]http://bawn92.github.io
+[Live Website](http://bawn92.github.io)
 
 
 My Personal blog project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
