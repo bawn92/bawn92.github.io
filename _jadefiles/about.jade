@@ -2,8 +2,13 @@ section
   h2#about-me About Myself
 
   div.about-lock
+    .flip-container(ontouchstart="this.classList.toggle('hover');")
+     .flipper
+       .front
+          div.face-img
+       .back
+          div.face1-img
 
-    div.face-img
     div(class="glyph-icon flaticon-cogwheel28")
     div(class="glyph-icon flaticon-computer1")
     div(class="glyph-icon flaticon-hosting")

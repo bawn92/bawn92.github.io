@@ -8,9 +8,45 @@
   .face-img
     +size(200px)
     border-radius: 50%
+    background: url(../img/face.JPG)
+
+  .face1-img
+    +size(200px)
+    border-radius: 50%
     background: url(../img/android.JPG)
-    margin: 30px
+
+
+
+
+  .flip-container
+    perspective: 1000
+    &:hover .flipper, &.hover .flipper
+      transform: rotateY(180deg)
+    +size(200px)
+    border-radius: 50%
     +order(3)
+  .front, .back
+    +size(200px)
+    border-radius: 50%
+
+  .flipper
+    transition: 0.6s
+    transform-style: preserve-3d
+    position: relative
+
+  .front, .back
+    backface-visibility: hidden
+    position: absolute
+    top: 0
+    left: 0
+
+  .front
+    z-index: 2
+    transform: rotateY(0deg)
+
+  .back
+    transform: rotateY(180deg)
+
 
   .flaticon-cogwheel28
     +order(1)
