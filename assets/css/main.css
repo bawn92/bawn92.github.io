@@ -595,12 +595,12 @@ h2, header nav a, header .kicker, footer .lockup a {
 
 header {
   height: 450px;
-  background: url(../img/galway.JPG) center center;
+  background: url(../img/galway2.jpg) center center;
   background-size: cover; }
   header .logo {
     height: 50px;
     width: 50px;
-    background: #999;
+    background: url(../img/logo.png) center center;
     float: left;
     margin: 10px 0 0 30px; }
   header nav {
@@ -634,7 +634,7 @@ header {
     color: rgba(0, 0, 0, 0.5); }
 
 footer {
-  background: url(../img/galway.JPG) center center;
+  background: url(../img/galway2.jpg) center center;
   background-size: cover; }
   footer .lockup {
     padding: 50px 30px; }
@@ -794,7 +794,8 @@ footer {
   margin: 50px auto;
   font-size: 25px;
   text-align: center;
-  font-weight: 30; }
+  font-weight: 30;
+  color: rgba(0, 0, 0, 0.5); }
 
 .section-contact {
   background: #e5eaee;

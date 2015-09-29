@@ -1,0 +1,30 @@
+
+{% for project in site.portfolio %}
+{% if project.redirect %}
+  .project
+    .thumbnail
+      a(href='{{ project.redirect }}', target='_blank')
+        {% if project.img %}
+        img.thumbnail(src='{{ project.img }}')
+        {% else %}
+        .thumbnail.blankbox
+        {% endif %}
+        span
+          h1 {{ project.title }}
+          br
+          p {{ project.description }}
+  {% else %}
+  .project
+    .thumbnail
+      a(href='{{ site.baseurl }}{{ project.url }}')
+        {% if project.img %}
+        img.thumbnail(src='{{ project.img }}')
+        {% else %}
+        .thumbnail.blankbox
+        {% endif %}
+        span
+          h1 {{ project.title }}
+          br
+          p {{ project.description }}
+{% endif %}
+{% endfor %}
