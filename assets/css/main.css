@@ -794,8 +794,7 @@ footer {
   margin: 50px auto;
   font-size: 25px;
   text-align: center;
-  font-weight: 30;
-  color: rgba(0, 0, 0, 0.5); }
+  font-weight: 30; }
 
 .section-contact {
   background: #e5eaee;
@@ -1159,3 +1158,16 @@ form {
     margin-bottom: 20px; }
     form label span {
       display: block; }
+
+.project-list {
+  padding: 0;
+  list-style: none; }
+
+.project {
+  float: left;
+  width: 33.33%;
+  padding: 0 1em;
+  text-align: center; }
+
+.project-caption {
+  margin-top: 0.5em; }

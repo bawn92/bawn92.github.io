@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="post">
+
+  <section class"site-section">
+  <ul class="project-list">
+    {% for project in site.categories['project'] %}
+
+      {% include project.html %}
+    {% endfor %}
+  </ul>
+
+ </section>
+
+
+
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
