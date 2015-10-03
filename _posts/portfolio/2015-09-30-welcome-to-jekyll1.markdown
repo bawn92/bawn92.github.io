@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Jekyll! 2"
 date:   2015-09-30 18:11:16
 categories: project
 featured: true
