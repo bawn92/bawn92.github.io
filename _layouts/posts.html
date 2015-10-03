@@ -4,19 +4,15 @@ layout: default
 
 {% include header_small.html %}
 
-<h1 class="page-heading">Posts</h1>
 
-<ul class="post-list">
+
+
   {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="post-header">
+      <a href="{{post.url}}"><h1 class="post-title">{{ post.title }}</h1></a>
+    </div>
+    <div class="post-header">
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y — %H:%M" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+    </div>
 
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
   {% endfor %}
-</ul>
-
-
-{{ content }}
