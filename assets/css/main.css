@@ -603,6 +603,21 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
   top: 20px;
   z-index: 999; }
 
+a.back-to-top {
+  display: none;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 998;
+  right: 20px;
+  bottom: 20px;
+  background: url(../img/silhouette125.svg) no-repeat center;
+  background-size: 15px;
+  background-color: #303e49;
+  border-radius: 30px;
+  border-radius: 30px; }
+
 header {
   height: 450px;
   background: url(../img/galway2.jpg) center center;
@@ -638,7 +653,7 @@ header {
     color: rgba(0, 0, 0, 0.5); }
 
 footer {
-  background: url(../img/galway2.jpg) center center;
+  background: url(../img/galway3.jpg) center center;
   background-size: cover; }
   footer .lockup {
     padding: 50px 30px; }
@@ -659,18 +674,6 @@ footer {
       margin-right: 30px; }
       footer .lockup a:hover {
         color: black; }
-
-a.back-to-top {
-  display: none;
-  width: 40px;
-  height: 40px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 999;
-  right: 20px;
-  bottom: 20px;
-  background: #303e49 url("up-arrow.png") no-repeat center 43%;
-  border-radius: 30px; }
 
 .about-lock {
   max-width: 780px;

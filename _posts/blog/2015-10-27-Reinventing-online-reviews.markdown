@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Blog"
-date:   2015-09-30 18:11:16
+title:  "Reinventing online review"
+date:   2015-10-27 18:11:16
 categories: blog
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
