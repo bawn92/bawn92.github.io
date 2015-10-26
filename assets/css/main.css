@@ -593,16 +593,20 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
   font-weight: 700;
   text-transform: uppercase; }
 
+.logo {
+  height: 50px;
+  width: 50px;
+  background: url(../img/logo.png) center center;
+  text-indent: 100px;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 999; }
+
 header {
   height: 450px;
   background: url(../img/galway2.jpg) center center;
   background-size: cover; }
-  header .logo {
-    height: 50px;
-    width: 50px;
-    background: url(../img/logo.png) center center;
-    float: left;
-    margin: 10px 0 0 30px; }
   header nav {
     float: right;
     margin: 30px 30px 30px; }
@@ -695,13 +699,13 @@ a.back-to-top {
   justify-content: space-between;
   -ms-flex-pack: justify; }
   .about-lock .face-img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    background: url(../img/face.JPG); }
+    height: 180px;
+    width: 180px;
+    border-radius: 60%;
+    background: url(../img/face.JPG) no-repeat; }
   .about-lock .face1-img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     background: url(../img/android.JPG); }
   .about-lock .flip-container {
