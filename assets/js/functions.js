@@ -331,3 +331,15 @@ function smoothScroll (duration) {
 		});
 	};
 }(jQuery || $)); // jQuery or jQuery-like library, such as Zepto
+
+
+
+var amountScrolled = 330;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
