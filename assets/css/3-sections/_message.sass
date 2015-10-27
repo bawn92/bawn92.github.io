@@ -10,7 +10,7 @@ form
 
     &:focus
       outline: none
-      border-color: $accent-light
+      border-color: lighten($color-1, 50%)
 
   .submit-wrap
     text-align: right
@@ -25,8 +25,8 @@ form
     text-transform: uppercase
     width: 33%
     &:hover
-      background: $accent-light
-
+      background: lighten($color-1, 20%)
+      border-color: lighten($color-1, 20%)
 
   textarea
     height: 10em

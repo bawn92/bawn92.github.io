@@ -8,7 +8,7 @@ layout: default
 
 <h2 id="Blog"> Blog Posts</h2>
 <hr class="bar-blog"> </hr>
-  {% for post in site.categories['blog'] reversed %}
+  {% for post in site.categories['blog'] %}
     <div class="post-header">
       <a href="{{post.url}}"><h1 class="post-title">{{ post.title }}</h1></a>
     </div>
@@ -17,6 +17,7 @@ layout: default
     </div>
 
   {% endfor %}
+  <hr class="bar-blog"> </hr>
 <div class="temp-posts">
 
 </div>
