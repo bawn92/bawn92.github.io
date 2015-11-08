@@ -594,13 +594,15 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
   text-transform: uppercase; }
 
 .logo {
-  height: 50px;
-  width: 50px;
-  background: url(../img/logo.png) center center;
+  height: 90px;
+  width: 90px;
+  background: url(../img/GOC1.png) center center;
+  background-size: 88px 47px;
+  background-repeat: no-repeat;
   text-indent: 100px;
   position: fixed;
-  left: 20px;
-  top: 20px;
+  left: 30px;
+  top: 10px;
   z-index: 999; }
 
 a.back-to-top {
@@ -1281,6 +1283,11 @@ form {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
+
+.comment {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-bottom: 100px; }
 
 #h_small {
   height: 170px;
