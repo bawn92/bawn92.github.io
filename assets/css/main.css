@@ -593,32 +593,47 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
   font-weight: 700;
   text-transform: uppercase; }
 
-.logo {
-  height: 90px;
-  width: 90px;
-  background: url(../img/GOC1.png) center center;
-  background-size: 88px 47px;
-  background-repeat: no-repeat;
-  text-indent: 100px;
-  position: fixed;
-  left: 30px;
-  top: 10px;
-  z-index: 999; }
+@media only screen and (min-width: 1170px) {
+  .logo {
+    height: 90px;
+    width: 90px;
+    background: url(../img/GOC1.png) center center;
+    background-size: 88px 47px;
+    background-repeat: no-repeat;
+    text-indent: 100px;
+    position: fixed;
+    left: 30px;
+    top: 10px;
+    z-index: 999; }
+  a.back-to-top {
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 998;
+    right: 20px;
+    bottom: 20px;
+    background: url(../img/silhouette125.svg) no-repeat center;
+    background-size: 15px;
+    background-color: #303e49;
+    border-radius: 30px; } }
 
-a.back-to-top {
-  display: none;
-  width: 40px;
-  height: 40px;
-  text-indent: -9999px;
-  position: fixed;
-  z-index: 998;
-  right: 20px;
-  bottom: 20px;
-  background: url(../img/silhouette125.svg) no-repeat center;
-  background-size: 15px;
-  background-color: #303e49;
-  border-radius: 30px;
-  border-radius: 30px; }
+@media only screen and (min-width: 220px) {
+  .arrow {
+    display: none; }
+  .logo {
+    height: 90px;
+    width: 90px;
+    background: url(../img/GOC1.png) center center;
+    width: 88px;
+    height: 47px;
+    background-size: 88px 47px;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 30px 0 0 30px; }
+  a.back-to-top {
+    display: none; } }
 
 header {
   height: 450px;
