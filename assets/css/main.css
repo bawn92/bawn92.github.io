@@ -595,16 +595,18 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
 
 @media only screen and (min-width: 1170px) {
   .logo {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     background: url(../img/GOC1.png) center center;
-    background-size: 88px 47px;
+    background-size: 70px 47px;
     background-repeat: no-repeat;
-    text-indent: 100px;
     position: fixed;
-    left: 30px;
-    top: 10px;
-    z-index: 999; }
+    left: 5px;
+    top: 0px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    z-index: 888; }
   a.back-to-top {
     display: none;
     width: 40px;
@@ -636,34 +638,66 @@ h2, header nav a, header .kicker, footer .lockup a, #h_small #nav_small a, #h_sm
     display: none; } }
 
 header {
-  height: 450px;
   background: url(../img/galway2.jpg) center center;
   background-size: cover; }
+  @media only screen and (min-width: 220px) {
+    header {
+      height: 300px; } }
+  @media only screen and (min-width: 650px) {
+    header {
+      height: 390px; } }
+  @media only screen and (min-width: 1170px) {
+    header {
+      height: 450px; } }
   header nav {
     float: right;
     margin: 30px 30px 30px; }
     header nav a {
-      display: inline-block;
       margin-left: 20px;
       color: rgba(0, 0, 0, 0.5); }
+      @media only screen and (min-width: 220px) {
+        header nav a {
+          display: none; } }
+      @media only screen and (min-width: 650px) {
+        header nav a {
+          display: inline-block; } }
       header nav a:hover {
         color: black; }
   header h1 {
     text-align: center;
-    font-size: 72px;
-    font-weight: 700;
     color: rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     letter-spacing: 0.05cm;
     margin-bottom: 20px;
-    clear: both;
-    padding-top: 50px; }
+    clear: both; }
+    @media only screen and (min-width: 220px) {
+      header h1 {
+        padding-top: 20px;
+        font-size: 32px;
+        font-weight: 350; } }
+    @media only screen and (min-width: 650px) {
+      header h1 {
+        padding-top: 10px;
+        font-size: 30px;
+        font-weight: 350; } }
+    @media only screen and (min-width: 1170px) {
+      header h1 {
+        padding-top: 50px;
+        font-size: 72px;
+        font-weight: 700; } }
     header h1 span {
       display: inline-block;
       padding: 0.2em 0.5em;
       border: rgba(0, 0, 0, 0.5) solid 10px; }
-    header h1:hover {
-      color: rgba(0, 0, 0, 0.4); }
+      @media only screen and (min-width: 220px) {
+        header h1 span {
+          padding: 0.2em 0.5em; } }
+      @media only screen and (min-width: 650px) {
+        header h1 span {
+          padding: 0.1em 0.2em; } }
+      @media only screen and (min-width: 1170px) {
+        header h1 span {
+          padding: 0.2em 0.5em; } }
   header .kicker {
     text-align: center;
     line-height: 1;
@@ -1060,7 +1094,7 @@ footer {
     width: 0;
     border: 10px solid transparent;
     border-right: 7px solid #ffffff; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 650px) {
     .cd-timeline-content h2 {
       font-size: 20px;
       font-size: 1.25rem; }
