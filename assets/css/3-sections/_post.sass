@@ -1,40 +1,59 @@
-.post-header
-  max-width:750px
-  +display(flex)
-  margin: 0 auto
-  +align-items(center)
-  +justify-content(space-between)
++MQ(S)
 
-.title
-  &:hover
-    max-width:750px
-    padding-left: 10px
+  .post-header
+    max-width:290px
     +display(flex)
+    margin: 10 auto
     +align-items(center)
     +justify-content(space-between)
 
-.post-title
-  font-size: 42px
-  letter-spacing: -1px
-  line-height: 1
+  .title
+    &:hover
+      max-width:250px
+      padding-left: 10px
+      +display(flex)
+      +align-items(center)
+      +justify-content(space-between)
+
+  .post-title
+    font-size: 42px
+    letter-spacing: -1px
+    line-height: 1
 
 
-.post-meta
-  margin-bottom: 0px
+  .post-meta
+    margin-bottom: 0px
 
-.post-link
-  display: block
-  font-size: 42px
+  .post-link
+    display: block
+    font-size: 40px
 
 
-.post
-  max-width:780px
-  +display(flex)
-  margin: 0 auto
-  +align-items(center)
-  +justify-content(space-between)
+  .post-wrapper
+    max-width:300px
+    margin: 0 auto
+    font-size: 22px
 
-.comment
-  max-width:780px
-  margin: 0 auto
-  padding-bottom: 100px
+  .comment
+    max-width:290px
+    margin: 0 auto
+    padding-bottom: 100px
+
+  .blurb-blog
+    font-size: 15px
+    font-weight: 30
++MQ(L)
+  .post-header
+    max-width:750px
+    margin: 0 auto
+  .title
+    &:hover
+      max-width:750px
+  .post-wrapper
+    max-width:780px
+  .comment
+    max-width: 780px
+
+  .blurb-blog
+    font-size: 22px
+    font-weight: 30
