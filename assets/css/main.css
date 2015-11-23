@@ -1254,9 +1254,8 @@ form {
     form label span {
       display: block; }
 
-.title:hover {
-  max-width: 270px;
-  padding-left: 10px;
+.title {
+  max-width: 750px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1280,6 +1279,8 @@ form {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
+  .title:hover {
+    padding-left: 10px; }
 
 @media only screen and (min-width: 220px) {
   .post-header {
@@ -1309,11 +1310,15 @@ form {
     justify-content: space-between;
     -ms-flex-pack: justify;
     padding-left: 10px; }
+  .title:hover {
+    padding-left: 10px; }
   .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
     padding-left: 10px; }
+    .post-title:hover {
+      padding-left: 10px; }
   .post-meta {
     margin-bottom: 0px;
     padding-bottom: 20px;
