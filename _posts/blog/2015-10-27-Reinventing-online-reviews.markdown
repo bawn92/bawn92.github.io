@@ -11,6 +11,7 @@ Amazon has tried to solve this by presenting the most helpful and unhelpful revi
 
 The technique I have applied involves analyzing every user review for a product. The features mentioned in each review are then extracted along with the positive, negative or neutral sentiment relating to that feature. The image below shows an example of the extraction.
 
+
 <div class="honeycombpic">
 <img src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/feature-extraction.png"/>
 </div>

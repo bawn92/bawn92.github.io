@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Reinventing the Youtube History Page"
+date:   2015-10-27 18:11:16
+categories: blog
+---
+
+I love youtube, and I have spent a crazy amount of hours on the platform. The
+quality of the content is consistenly getting better and I'm always finding new
+channels which I immediatly love (nerdwriter1/DevTips). However I do have some
+issues with the platform itself. The main one is with the history page for users. There is a
+lack of proper analysis on the videos you have watched.
+
+It really frustrates me that I can view the total number of channels I have
+watched and sort them based on number of videos watched or number of hours per
+channel. I also always wanted to know the total number of hours I have spent
+on the platform too.
+
+I develop a chrome extension which provides the statistics I
+felt are missing from the Youtube history page. The tool works by automatically
+selecting the load more button on the history page until it has reached the end.
+It then parses the data pulling the channels, title, video length and places
+these into a hashmap. Once in a hashmap this is save to local storage.
