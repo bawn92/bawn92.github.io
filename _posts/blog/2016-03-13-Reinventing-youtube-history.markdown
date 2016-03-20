@@ -25,6 +25,4 @@ The following image is an example of the extension in action.
 
 The first time you run the tool, it can take up to ten minutes to complete. After the first iteration, it will run in a matter of seconds because it will just be comparing the latest videos against the hash-map. Once it has come across 50 videos in a row that are in the hash-map.
 
-For anyone wanting to try the extension, it can be accessed [here](https://www.dropbox.com/s/3jqvgvtlv69gmi9/app.tar.gz?dl=0)
-
 Once downloaded unzip the folder, go to the Chrome extensions page and select developer mode. Then select load unpacked extensions and select the unpacked app folder. Now go to the Youtube history page and run the application.
