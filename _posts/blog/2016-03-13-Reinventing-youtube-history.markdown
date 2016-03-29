@@ -5,17 +5,17 @@ date:   2016-03-03 20:11:16
 categories: blog
 ---
 
-Youtube is the best online platform for video content. The quality of the content is consistently getting better, and I'm always finding new channels which I immediately love. However, I do have some issues with the platform itself. The main problem I have is with the history page for users. There is a lack of proper analysis and statistics on the videos you have watched.
+Youtube is undeniably the best online platform for distributing and consuming videos. The quality of the content is consistently getting better.  As a result, I'm always finding new channels that I immediately love. However, I have various issues with the platform itself. The biggest is with the history page for users. There is a lack of proper analysis and statistics on the videos you have watched.
 
-I feel people would love to know the total number of hours they have spent on the platform, average view count and video length of the videos they have watched. Information regarding their top channels and how much time they have devoted to each I feel would also be valuable.
+People desire to know the total number of hours they have spent on the platform and videos they have viewed. Also, how many times they have watched their favourite video along with a breakdown of their top channels.
 
-I became very interested in finding out this information about my history, so I searched for tools and methods of obtaining the information I desired. I soon realized there was no available method to get the information I sought. I set out to develop a chrome extension which provides the statistics and information I felt are missing from the Youtube history page.
+After seeing a gap in the youtube platform, I searched for a way to make the above numerical data available to the Youtube user. In seeking to find a solution, my research concluded that a chrome extension tool would be best suited to this scenario.
 
-The an image of the results page of my Chrome extension is showen below:
+Following the development of the tool, here is an image of the working solution:
 
 IMG
 
-The tool works by automatically selecting the load more button on the history page until it has reached the end of your history. It then parses the data pulling the channels, title, video length and places these into a hashmap. Once parsed into a hashmap, it is saved to local storage.
+It works by automatically obtaining the details of every video you have watched from the history page. It then parses the data pulling the relevant information and saves this to the browser's local storage.
 
 The following image is an example of the extension in action.
 
@@ -23,6 +23,6 @@ The following image is an example of the extension in action.
 <img src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/chromeApp.gif"/>
 </div>
 
-The first time you run the tool, it can take up to ten minutes to complete. After the first iteration, it will run in a matter of seconds because it will just be comparing the latest videos against the hash-map. Once it has come across 50 videos in a row that are in the hash-map.
+The tool can be downloaded from the Chrome store here:
 
-Once downloaded unzip the folder, go to the Chrome extensions page and select developer mode. Then select load unpacked extensions and select the unpacked app folder. Now go to the Youtube history page and run the application.
+https://chrome.google.com/webstore/detail/youtube-extension/fmnofhlebmngahphomblaegaocmmligb
