@@ -11,10 +11,6 @@ People desire to know the total number of hours they have spent on the platform 
 
 After seeing a gap in the youtube platform, I searched for a way to make the above numerical data available to the Youtube user. In seeking to find a solution, my research concluded that a chrome extension tool would be best suited to this scenario.
 
-Following the development of the tool, here is an image of the working solution:
-
-IMG
-
 It works by automatically obtaining the details of every video you have watched from the history page. It then parses the data pulling the relevant information and saves this to the browser's local storage.
 
 The following image is an example of the extension in action.
