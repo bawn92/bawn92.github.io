@@ -23,6 +23,4 @@ The following image is an example of the extension in action.
 <img src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/chromeApp.gif"/>
 </div>
 
-The tool can be downloaded from the Chrome store here:
-
-https://chrome.google.com/webstore/detail/youtube-extension/fmnofhlebmngahphomblaegaocmmligb
+The tool can be downloaded from the Chrome store [here](https://chrome.google.com/webstore/detail/youtube-extension/fmnofhlebmngahphomblaegaocmmligb)
