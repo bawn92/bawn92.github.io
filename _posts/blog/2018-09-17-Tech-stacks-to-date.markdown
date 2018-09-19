@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tech stacks mind map"
+title:  "Mind Map: Tech Stacks"
 date:   2018-09-17 21:51:11
 categories: blog
 ---
@@ -8,6 +8,6 @@ categories: blog
 To date these are the tech stacks & tools I have used in "production".
 
 
-<div class="honeycombpic">
-<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/galway-orginal.JPG?raw=true"/>
+<div class="">
+<img src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/image%20(65).png"/>
 </div>
