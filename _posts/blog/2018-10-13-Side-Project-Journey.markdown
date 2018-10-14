@@ -21,7 +21,7 @@ Then I decide on a tech stack.  The technologies I chose can be broken down into
 
 This is what I settled on:
 
-<div class="honeycombpic">
+<div class="honeycombpic-short">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/system-arch.png?raw=true"/>
 </div>
 
