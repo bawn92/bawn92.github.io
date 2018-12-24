@@ -7,7 +7,7 @@ categories: blog
 
 ##### Overview
 
- [The Gaelic Point](https://www.thegaelicpoint.ie) is a web application for viewing Gaelic Football data. The application idea for the side project, while important, is not the primary reason for me to take on the side project or this blog. 
+ [The Gaelic Point](https://www.thegaelicpoint.ie) is a web application for viewing Gaelic football data. The application idea for the side project, while important, is not the primary reason for me to take on the side project or this blog. 
 
 The goal of the side project is to go through the journey of bootstrapping an idea from start to finish. While, the goal of this blog is to share that journey, process, and thinking at different stages through the life cycle of the project.
  
