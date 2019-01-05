@@ -1237,6 +1237,9 @@ form {
   .honeycombpic-short img {
     width: 100%;
     height: 100%; }
+  .honeycombpic-square img {
+    width: 100%;
+    height: 100%; }
   .honeycombpic-long img {
     width: 100%;
     height: 100%; }
@@ -1291,6 +1294,11 @@ form {
     width: 650px;
     height: 410px;
     margin-bottom: 30px;
+    margin-top: 30px; }
+  .honeycombpic-square {
+    width: 650px;
+    height: 650px;
+    margin-bottom: 30px;
     margin-top: 30px; } }
 
 @media only screen and (min-width: 1070px) {
@@ -1322,6 +1330,11 @@ form {
   .honeycombpic-short {
     width: 750px;
     height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  .honeycombpic-square {
+    width: 750px;
+    height: 750px;
     margin-bottom: 30px;
     margin-top: 30px; } }
 
