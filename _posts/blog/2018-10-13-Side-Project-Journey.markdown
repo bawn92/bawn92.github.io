@@ -49,7 +49,7 @@ While staging runs on Heroku's free instance, production is running on the Hobby
 
 The fifth and final stage for this project was search engine optimization. After finishing development and requesting indexing from Google I noticed the search performance was doing pretty poorly. I have been heavily using Googles Search console to access and optimize my site. To improve my search ranking I have made a number of changes. I started by including a sitemap.xml file. I updated the page titles and meta to be unique and useful for each page. I converted javascript URL re-direct actions to physical href links for better indexing of the entire website. I made minor performance & mobile enhance to increase the sights web ranking score. Lastly, I ensured all HTTP requests were getting redirected to https on cloud-flare. SEO is an on-going battle and continuously needs work. For now, I am delighted to see my application at the top of Google for one keyword and with 1500 monthly users!
 
-<div class="honeycombpic">
+<div class="honeycombpic-small">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/growth.png?raw=true"/>
 </div>
 
