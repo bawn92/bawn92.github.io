@@ -55,6 +55,7 @@ The fifth and final stage for this project was search engine optimization. After
 
 ##### Final Product
 
+The following is a series of screenshots from the website. Enjoy!
 
 Homepage
 
