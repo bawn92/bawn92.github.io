@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Side Project Journey"
+title:  "The side project journey"
 date:   2018-10-10 16:57:10
 categories: blog
 ---
