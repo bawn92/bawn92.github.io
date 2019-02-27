@@ -15,7 +15,7 @@ I was curious to know how these people had been using my website. When I started
 
 I didn't change the world but I did make a contribution!
 
-<div class="honeycombpic-short">
+<div class="honeycombpic-small">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/opensource.png?raw=true"/>
 </div>
 
