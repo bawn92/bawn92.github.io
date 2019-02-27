@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Building on designs: Hexly"
+date:   2017-02-22 19:12:45
+categories: blog
+---
+
+Following on from my Reinventing online reviews article I now have a working prtotype of my inital design.
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-draw.png?raw=true"/>
+</div>
+
+Demo
+
+<div class="honeycombpic">
+<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-render.gif?raw=true" />
+</div>
+
+Infrasturuce
+
+<div class="honeycombpic">
+<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-render.gif?raw=true" />
+</div>
