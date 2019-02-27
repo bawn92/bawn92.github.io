@@ -20,5 +20,5 @@ Demo
 Infrasturuce
 
 <div class="honeycombpic">
-<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-render.gif?raw=true" />
+<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-infra.png?raw=true" />
 </div>
