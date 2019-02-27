@@ -28,7 +28,7 @@ to the write. The more postive or negative the word the furture from the center 
 Credit for image gose to Red Blog Games
 
 <div class="honeycombpic-small">
-<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-infra.png?raw=true" />
+<img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexagon-layout.png?raw=true" />
 </div>
 
 
