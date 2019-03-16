@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "An analysis of mutiple recommedar systems for movie rating predictions"
-date:   2015-09-22 13:22:51
+title:  "Recommender systems"
+date:   2015-10-22 13:22:51
 categories: blog
 ---
+
+The following is a paper I submitted as paper of my masters course for the Adaptive personalization mododule.
+
 
 ##### Introduction
 
@@ -100,19 +103,29 @@ The greatest improvement on the baseline came from the term-frequency weighting 
 
 [1] J. Teevan and R. W. White, "Slow Search: Information Retrieval without Time
 Constraints," Association for Computing Machinery, 2010.
+
 [2] "Netflix Prize," 2 October 2006. [Online]. Available: http://www.netflixprize.com/rules.
+
 [3] "NetCraft," 10 October 2014. [Online]. Available:
 http://news.netcraft.com/archives/2014/10/10/october-2014-web-server-survey.html.
+
 [4] J. L. Subbiondo, John Wilkins and the 17thCentury British Linguistics, John Benjamins
 Publishing Company, 1992.
+
 [5] R. Baeza-Yates, Modern Information Retrieval, Addison Wesley, 1999, p. 167.
+
 [6] D. A. Grossman, Information Retrival, Kluwer Academic Publishers, 1998.
+
 [7] G. Uchyigit, Personalization Techniques And Recommender Systems, World Scientific
 Publishing Co, 2008.
+
 [8] U. Shardanand, "Social Information Filtering: Algorithms for Automating "Word of
 Mouth"," 1995. [Online]. Available:
 http://www.sigchi.org/chi95/proceedings/papers/us_bdy.htm.
+
 [9] J. K. a. J. R. J. Schafer, "Recommender systems in e-commerce," in ACM E-Commerce,
-1999.
+
+
 [10] "MovieLens," [Online]. Available: http://www.recsyswiki.com/wiki/MovieLens.
+
 [11] P. Cunningham, "Dimension Reduction," UCD-CSI, 2007.
