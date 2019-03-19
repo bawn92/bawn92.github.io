@@ -1234,6 +1234,9 @@ form {
     max-width: 270px;
     margin: 0 auto;
     font-size: 22px; }
+  .honeycombpic-table img {
+    width: 100%;
+    height: 100%; }
   .honeycombpic-short img {
     width: 100%;
     height: 100%; }
@@ -1312,6 +1315,11 @@ form {
     height: 410px;
     margin-bottom: 30px;
     margin-top: 30px; }
+  .honeycombpic-table {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
   .honeycombpic-square {
     width: 650px;
     height: 650px;
@@ -1357,6 +1365,11 @@ form {
   .honeycombpic-short {
     width: 750px;
     height: 500px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+  .honeycombpic-table {
+    width: 600px;
+    height: 200px;
     margin-bottom: 30px;
     margin-top: 30px; }
   .honeycombpic-square {

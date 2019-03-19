@@ -66,7 +66,7 @@ Filtering threshold weights involves excluding movies from a user’s profile wh
 
 I hypothesizethat the predicted accuracy will decrease. I believe the accuracy willdecrease slightly because user’s profiles will contain only their favorite moviesas their lower rated movies will have been removed. Thisseemslogical because if youwere to ask a user for two sets of movies to make recommendations from,the first set containing a user’shighly like movies along withones they rated poorly or just movies they rated highly,you would prefer the set with both liked and disliked movies. Movies in a user’s profile with low ratings are very usefulforknowing what sets of movies not to recommend to a user. 
 
-<div class="honeycombpic">
+<div class="honeycombpic-table">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Table3.png?raw=true"/>
 </div>
 
