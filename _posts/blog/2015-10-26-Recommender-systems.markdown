@@ -5,30 +5,29 @@ date:   2015-10-22 13:22:51
 categories: blog
 ---
 
-The following is a paper I submitted as paper of my masters course for the Adaptive Personalization module. The title of the paper was "An analysis of mutiple recommedar systems for the purpose of movie rating predictions"
+The following is a paper I submitted as part of my master's course for the Adaptive Personalization module. The title of the paper was "An analysis of multiple recommender systems for the purpose of movie rating predictions"
 
 
 ##### Introduction
 
-The World Wide Web was initially designed for the exchange of unstructured data between scientists at “CERN” [1]. It quickly exploded to become a mechanism for e-commerceand social networking with enormous amounts of information being available to the user.In September 2014 a historic milestone was reached, the number of active websites reached one billion andis doubling every nine months[3].
+The World Wide Web was initially designed for the exchange of unstructured data between scientists at “CERN” [1]. It quickly exploded to become a mechanism for e-commerce and social networking with enormous amounts of information being available to the user. In September 2014 a historic milestone was reached, the number of active websites reached one billion and is doubling every nine months[3].
 
-These vast quantities of data beingcollected andavailableto the user can be overwhelming.In order to elevate this problem personalization technologies have been widely implemented acrossmultiple domains. The goal is to enhance the users experience by reducing the cognitive load required for user to find the desired information. This is achieved by filtering, sorting and classifying the available information in order to present to the user the personalized items that are relevant and novel. The problem of finding and presenting relevant information has been an issue for a far longer time than the web has been in existence. The classification of information into sets of fixed categories began in 1668 by the English philosopher Jon Wilkins [4]. 
+These vast quantities of data being collected and available to the user can be overwhelming.In order to elevate this problem personalization technologies have been widely implemented across multiple domains. The goal is to enhance the user's experience by reducing the cognitive load required for the user to find the desired information. This is achieved by filtering, sorting and classifying the available information in order to present to the user the personalized items that are relevant and novel. The problem of finding and presenting relevant information has been an issue for a far longer time than the web has been in existence. The classification of information into sets of fixed categories began in 1668 by the English philosopher Jon Wilkins [4]. 
 
-The area ofinformation retrieval and classification has evolved into topics such as information visualization andrecommender systems which are very topical at the moment as research fields. Interestin these topics isdue to its challenging open issues[1]. Competitions like the Netflix Prize have also helped make significant progresstowards better classification and recommendation systems[2]. 
+The area of information retrieval and classification has evolved into topics such as information visualization and recommender systems which are very topical at the moment as research fields. Interest in these topics is due to its challenging open issues[1]. Competitions like the Netflix Prize have also helped make significant progress towards better classification and recommendation systems[2]. 
 
-In this paper, I document, analyze, implement and compare three various recommender systemsagainsta baseline metric. The baselinein this instanceisan overlap scoring function using a max recommender. The three techniques that will be analyzed are a fixed and personalized threshold weighting(task 4), item based collaborative filtering(task 8) and term frequency weighting using a cosine similarity function (task 9). 
+In this paper, I document, analyze, implement and compare three various recommender systems against baseline metric. The baseline in this instance is an overlap scoring function using a max recommender. The three techniques that will be analyzed are a fixed and personalized threshold weighting(task 4), item-based collaborative filtering(task 8) and term frequency weighting using a cosine similarity function (task 9). 
 
 The dataset being analyzed contains1000 users, with 1073 different movies. There is a total of 31288 movie ratings across all genres. The data was extracted from the website “Flixster”.
 
-The rest of this paper is organized as follows. Section 2 describes the datasetused in detail providinga deepunderstanding of the distribution of the data. Section 3 will discuss and analyze the personalized threshold weighting algorithm. Section 4 will discuss and analyze the item based collaborativefiltering algorithm. Section 5 will explain and analyze the term frequency weighting using a cosine similarity function.
+The rest of this paper is organized as follows. Section 2 describes the dataset used in detail providing a deep understanding of the distribution of the data. Section 3 will discuss and analyze the personalized threshold weighting algorithm. Section 4 will discuss and analyze the item-based collaborative filtering algorithm. Section 5 will explain and analyze the term frequency weighting using a cosine similarity function.
 
 
 ##### Dataset Statistics
 
-The graphs in this section give a comprehensive understanding of the distribution of the data being used.The data in this dataset statisticssection are taken from the training set data.Figures one and two are skewed right with the vast majority of users rating between zero and thirty movies and a near total majority of movies receiving between zero and fifty ratings. Figure three shows that users are more inclined to give a high rating when reviewing a movie.
+The graphs in this section give a comprehensive understanding of the distribution of the data being used. The data in this dataset statistics section are taken from the training set data. Figures one and two are skewed right with the vast majority of users rating between zero and thirty movies and a near-total majority of movies receiving between zero and fifty ratings. Figure three shows that users are more inclined to give a high rating when reviewing a movie.
 
-Table one displays the ten most likedand disliked movies with five movies receiving a perfect mean rating of five with only 1 receiving a mean rating of 1.Figure four and five are skewed right with majority of directors and actors directing and acting in only one movie. Table two indicates that sci-fi is the lowest rated genre and biography being the highest.
-
+Table one displays the ten most liked and disliked movies with five movies receiving a perfect mean rating of five with only 1 receiving a mean rating of 1.Figure four and five are skewed right with the majority of directors and actors directing and acting in only one movie. Table two indicates that sci-fi is the lowest rated genre and biography being the highest.
 
 <div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure1.png?raw=true"/>
@@ -62,25 +61,26 @@ Table one displays the ten most likedand disliked movies with five movies receiv
 
 ##### Filtered Threshold weightings
 
-Filtering threshold weights involves excluding movies from a user’s profile which are below a certain level. Two filtering methods were implemented. The first was a fixed threshold weight. Using values of 4, 3.5 and 3 to filter the movies from a user’s profile. The second method was to use personalized weights. The personalized weights werebased on the mean (μ) and standard deviation (σ) of the user’s profile. The formula used to generate the thresholdwas μ +ωσ. Where ω is a weight usedto vary the importance of the standard deviation.0.1, 0.3, 0.4 were the three different values used for ω.
+Filtering threshold weights involve excluding movies from a user’s profile which are below a certain level. Two filtering methods were implemented. The first was a fixed threshold weight. Using values of 4, 3.5 and 3 to filter the movies from a user’s profile. The second method was to use personalized weights. The personalized weights were based on the mean (μ) and standard deviation (σ) of the user’s profile. The formula used to generate the threshold was μ +ωσ. Where ω is a weight used to vary the importance of the standard deviation.0.1, 0.3, 0.4 were the three different values used for ω.
 
-I hypothesizethat the predicted accuracy will decrease. I believe the accuracy willdecrease slightly because user’s profiles will contain only their favorite moviesas their lower rated movies will have been removed. Thisseemslogical because if youwere to ask a user for two sets of movies to make recommendations from,the first set containing a user’shighly like movies along withones they rated poorly or just movies they rated highly,you would prefer the set with both liked and disliked movies. Movies in a user’s profile with low ratings are very usefulforknowing what sets of movies not to recommend to a user. 
+I hypothesize that the predicted accuracy will decrease. I believe the accuracy will decrease slightly because user’s profiles will contain only their favorite movies as their lower rated movies will have been removed. This seems logical because if you were to ask a user for two sets of movies to make recommendations from, the first set containing a user’s highly like movies along with ones they rated poorly or just movies they rated highly, you would prefer the set with both liked and disliked movies. Movies in a user’s profile with low ratings are very useful for knowing what sets of movies not to recommend to a user. 
+
 
 <div class="honeycombpic-table">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Table3.png?raw=true"/>
 </div>
 
-Figure 7 and 8show the obtained results. It is clear from these figures thatthese methodsdid not improve on the baseline and also that the personalized filter performed worse than thefixedthreshold.From analyzing the data I have realized this was for two reasons.
+Figure 7 and 8 show the obtained results. It is clear from these figures that these methods did not improve on the baseline and also that the personalized filter performed worse than the fixed threshold. From analyzing the data I have realized this was for two reasons.
 
-The first is that the user profiles have avastly reduced number of movies ratingsto makerecommendationson.Comparing figure 7 and 8 with table 3 and 4 it is clear to see how the percentage of ratings removed affects the ability to accurately recommended movies. There is a clear correlation between the size of user profiles and the precision and recall score.
+The first is that the user profiles have a vastly reduced number of movies ratings to make recommendations on. Comparing figure 7 and 8 with table 3 and 4 it is clear to see how the percentage of ratings removed affects the ability to accurately recommended movies. There is a clear correlation between the size of user profiles and the precision and recall score.
 
-In table 4, the average threshold weight was calculated in order to gain insight into what threshold levels the algorithm was using. Also the number of users removed was calculated which equates to the number of users who had no ratings below the μ +ωσ value.
+In table 4, the average threshold weight was calculated in order to gain insight into what threshold levels the algorithm was using.  Also, the number of users removed was calculated which equates to the number of users who had no ratings below the μ +ωσ value.
 
-Secondly, movies which a user dislikes and rates poorly are as useful for making predictions as highly rated moviesas they help us in understanding which sets of neighbors a user will not like. This verifies the hypothesismade in the second paragraph that this implementation will decrease the precision and recall compared with the baseline.
+Secondly, movies which a user dislikes and rates poorly are as useful for making predictions as highly rated movies as they help us in understanding which sets of neighbors a user will not like. This verifies the hypothesis made in the second paragraph that this implementation will decrease the precision and recall compared with the baseline.
 
-The reasoning for the personalizedthresholdperformingworse than fixed threshold is clear once the average threshold applied in table 4 is analyzed. The average threshold applied is higher than the fixed thresholdin table 3 forall three cases. Resulting in a smaller user profile in turn reducing the accuracy of the predictions.
+The reasoning for the personalized threshold performing worse than a fixed threshold is clear once the average threshold applied in table 4 is analyzed. The average threshold applied is higher than the fixed threshold in table 3 for all in three cases. Resulting in a smaller user profile, in turn, reducing the accuracy of the predictions.
 
-The results from the filtered thresholds tests informus that both user’s lower ratingsand higher ratings are needed in the prediction of recommendations for a useras the removal of either reduces the precision and recall. They also show us that there is a correlation between profile sizes and the ability to make recommendations as smallerprofilesizesproduce lower precision and recall.
+The results from the filtered thresholds tests inform us that both users lower ratings and higher ratings are needed in the prediction of recommendations for a user as the removal of either reduces the precision and recall. They also show us that there is a correlation between profile sizes and the ability to make recommendations as smaller profile sizes produce lower precision and recall.
 
 <div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure7.png?raw=true"/>
@@ -112,7 +112,7 @@ In conclusion item-based collaborative filtering is not an applicableapproach fo
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure8.png?raw=true"/>
 </div>
 
-##### Term Frequency weighting
+##### Term Frequency Weighting
 
 The approaches analyzed so far have been basedon case-basedand collaborative filteringrecommendation techniques. They have not utilized the unstructured text recommendations provide with each users reviewof a movie.This technique which is a content based approach merges all the reviews for acertain movie into a single document. This document can then be represented as a term-vector, which is used in calculating document-document similarity.The document-document similarity is calculated using the Cosine Similarity. TheCosine Similarity is then used as an extra feature in the overall assessment of the similarity between two items.  
 
@@ -139,13 +139,13 @@ The key findings from this experiment are that a combination of case-based and c
 
 ##### Conclusion
 
-In this paper I analyzed the given dataset. Reviewed and implemented work in case-based retrieval, collaborative filtering and content based retrieval accessing the effectiveness of each on the dataset. Meticulously detailing the purpose of performing every task identifying the hypostasis I hoped to achieve and comparing this hypostasis to the gathered results.
+In this paper, I analyzed the given dataset. Reviewed and implemented work in case-based retrieval, collaborative filtering, and content-based retrieval accessing the effectiveness of each on the dataset. I detailed the purpose of performing every task, identifying the hypostasis I hoped to achieve and comparing this hypostasis to the gathered results.
 
-I obtained a high degree of variance between the results of each implementation. I have shown that that due to the sparsity of the matrix, collaborative filtering is not an ideal approach. In comparison the inclusion of term frequency weighting for the reviews provided greatly increased the accuracy of the predictions. 
+I obtained a high degree of variance between the results of each implementation. I have shown that due to the sparsity of the matrix, collaborative filtering is not an ideal approach. In comparison, the inclusion of term frequency weighting for the reviews provided greatly increased the accuracy of the predictions. 
 
-Meticulous implementation and careful testing of a given recommender system is required to access the real world value of a given implementation. It is critical that the systemis not over fitted to the data. K-Fold Cross Validation should be applied to multiple datasets to insure the results are accurate and reliable. The resultspresented in this paperhave only been tested on a single dataset using a single training and test set.Further testing would be required to verify the finds of each implementation. 
+The meticulous implementation and careful testing  the given recommender system was required to access the real world value of a given implementation. It was critical that the system was not overfitted to the data. K-Fold Cross Validation was applied to multiple datasets to ensure the results are accurate and reliable. The results presented in this paper have only been tested on a single dataset using a single training and test set. Further testing would be required to verify the findings of each implementation. 
 
-The greatest improvement on the baseline came from the term-frequency weighting therefore a further research direction of particular interest could be develop this implementationinto a genetic algorithm to dynamically select the appropriate weight for each term. I believe that dynamically selecting the term weights could produce more accurate recommendations. The fitness function for the genetic algorithm could be based on a relevance assessment of the top x documents retrieved.
+The greatest improvement on the baseline came from the term-frequency weighting, therefore, a further research direction of particular interest could be to develop this implementation into a genetic algorithm to dynamically select the appropriate weight for each term. I believe that dynamically selecting the term weights could produce more accurate recommendations. The fitness function for the genetic algorithm could be based on a relevance assessment of the top x documents retrieved.
 
 ##### References
 
@@ -154,8 +154,7 @@ Constraints," Association for Computing Machinery, 2010.
 
 [2] "Netflix Prize," 2 October 2006. [Online]. Available: http://www.netflixprize.com/rules.
 
-[3] "NetCraft," 10 October 2014. [Online]. Available:
-http://news.netcraft.com/archives/2014/10/10/october-2014-web-server-survey.html.
+[3] "NetCraft," 10 October 2014. [Online].
 
 [4] J. L. Subbiondo, John Wilkins and the 17thCentury British Linguistics, John Benjamins
 Publishing Company, 1992.
@@ -168,11 +167,9 @@ Publishing Company, 1992.
 Publishing Co, 2008.
 
 [8] U. Shardanand, "Social Information Filtering: Algorithms for Automating "Word of
-Mouth"," 1995. [Online]. Available:
-http://www.sigchi.org/chi95/proceedings/papers/us_bdy.htm.
+Mouth"," 1995. [Online]
 
 [9] J. K. a. J. R. J. Schafer, "Recommender systems in e-commerce," in ACM E-Commerce,
-
 
 [10] "MovieLens," [Online]. Available: http://www.recsyswiki.com/wiki/MovieLens.
 
