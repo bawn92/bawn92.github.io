@@ -5,7 +5,7 @@ date:   2015-10-22 13:22:51
 categories: blog
 ---
 
-The following is a paper I submitted as paper of my masters course for the Adaptive personalization mododule.
+The following is a paper I submitted as paper of my masters course for the Adaptive Personalization module. The title of the paper was "An analysis of mutiple recommedar systems for the purpose of movie rating predictions"
 
 
 ##### Introduction
@@ -29,11 +29,46 @@ The graphs in this section give a comprehensive understanding of the distributio
 
 Table one displays the ten most likedand disliked movies with five movies receiving a perfect mean rating of five with only 1 receiving a mean rating of 1.Figure four and five are skewed right with majority of directors and actors directing and acting in only one movie. Table two indicates that sci-fi is the lowest rated genre and biography being the highest.
 
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure1.png?raw=true"/>
+</div>
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure2.png?raw=true"/>
+</div>
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure3.png?raw=true"/>
+</div>
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Table1.png?raw=true"/>
+</div>
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure4.png?raw=true"/>
+</div>
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure5.png?raw=true"/>
+</div>
+
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure6.png?raw=true"/>
+</div>
+
+
 ##### Filtered Threshold weightings
 
 Filtering threshold weights involves excluding movies from a user’s profile which are below a certain level. Two filtering methods were implemented. The first was a fixed threshold weight. Using values of 4, 3.5 and 3 to filter the movies from a user’s profile. The second method was to use personalized weights. The personalized weights werebased on the mean (μ) and standard deviation (σ) of the user’s profile. The formula used to generate the thresholdwas μ +ωσ. Where ω is a weight usedto vary the importance of the standard deviation.0.1, 0.3, 0.4 were the three different values used for ω.
 
 I hypothesizethat the predicted accuracy will decrease. I believe the accuracy willdecrease slightly because user’s profiles will contain only their favorite moviesas their lower rated movies will have been removed. Thisseemslogical because if youwere to ask a user for two sets of movies to make recommendations from,the first set containing a user’shighly like movies along withones they rated poorly or just movies they rated highly,you would prefer the set with both liked and disliked movies. Movies in a user’s profile with low ratings are very usefulforknowing what sets of movies not to recommend to a user. 
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Table3.png?raw=true"/>
+</div>
 
 Figure 7 and 8show the obtained results. It is clear from these figures thatthese methodsdid not improve on the baseline and also that the personalized filter performed worse than thefixedthreshold.From analyzing the data I have realized this was for two reasons.
 
@@ -46,6 +81,10 @@ Secondly, movies which a user dislikes and rates poorly are as useful for making
 The reasoning for the personalizedthresholdperformingworse than fixed threshold is clear once the average threshold applied in table 4 is analyzed. The average threshold applied is higher than the fixed thresholdin table 3 forall three cases. Resulting in a smaller user profile in turn reducing the accuracy of the predictions.
 
 The results from the filtered thresholds tests informus that both user’s lower ratingsand higher ratings are needed in the prediction of recommendations for a useras the removal of either reduces the precision and recall. They also show us that there is a correlation between profile sizes and the ability to make recommendations as smallerprofilesizesproduce lower precision and recall.
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure7.png?raw=true"/>
+</div>
 
 ##### Item based Collaborative Filtering
 
@@ -69,6 +108,10 @@ One solution to deal with this issue istoo use dimensionality reductionas a pre-
 
 In conclusion item-based collaborative filtering is not an applicableapproach for the given dataset.
 
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure8.png?raw=true"/>
+</div>
+
 ##### Term Frequency weighting
 
 The approaches analyzed so far have been basedon case-basedand collaborative filteringrecommendation techniques. They have not utilized the unstructured text recommendations provide with each users reviewof a movie.This technique which is a content based approach merges all the reviews for acertain movie into a single document. This document can then be represented as a term-vector, which is used in calculating document-document similarity.The document-document similarity is calculated using the Cosine Similarity. TheCosine Similarity is then used as an extra feature in the overall assessment of the similarity between two items.  
@@ -88,6 +131,11 @@ The TF-IDF performs better for the top 5, 10 and 15 predictions.TF-IDF performs 
 TF-IDF outperforming on the top end of the scale is also expected. I had not expected binary to outperform TF-IDF at the lower end but logically it makes sense. Using the inverse term document frequency we give terms which appear in a small collection of documents higher weighting resulting in documents which contain rare co-occurring terms getting a high similarity. In ourcollection the most defining terms for a document will probably occur in at most 15 documents. So outside this range the TF-IDF will perform poorly as selecting terms which are of relevancetoa documentbecomes hard. 
 
 The key findings from this experiment are that a combination of case-based and content-based recommendation performs much better than case-based on its own for the critical values. The main limitations of this approach is the assumption made by the cosine measure which is that a document length has no impact on relevance which according to TREC data is not true [6].
+
+<div class="honeycombpic">
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/Figure9.png?raw=true"/>
+</div>
+
 
 ##### Conclusion
 
