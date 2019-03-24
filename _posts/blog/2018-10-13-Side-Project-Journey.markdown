@@ -49,11 +49,11 @@ While staging runs on Heroku's free instance, production is running on the Hobby
 
 The fifth and final stage for this project was search engine optimization. I requested Google to index my website. To my disappointment it received a low score. The search performance was taking a hit. To improve my search ranking I took a number of steps. 
 
-1. I  included a sitemap.xml file. 
-2. I updated the page titles and meta to be unique and relevant for each page. 
-3. I converted javascript URL re-direct actions to physical href links for better indexing of the entire website.
-4. I made minor performance & mobile enhance.
-5. I ensured all HTTP requests were getting redirected to https on cloud-flare. 
+1. Included a sitemap.xml file. 
+2. Updated the page titles and meta to be unique and relevant for each page. 
+3. Converted javascript URL re-direct actions to physical href links for better indexing of the entire website.
+4. Made minor performance & mobile enhance.
+5. Ensured all HTTP requests were getting redirected to https on cloud-flare. 
 
 SEO is an on-going battle and continuously needs work. For now, I am delighted to see my application at the top of Google for one keyword and with 1500 monthly users!
 
