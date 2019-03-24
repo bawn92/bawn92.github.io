@@ -8,6 +8,6 @@ categories: blog
 [Dublin Digital Radio](https://listen.dublindigitalradio.com/) is community run radio station that I help to build with [Barry Owens](http://www.barryowens.net/). It was one of the most satisfying projects I have ever worked on. The designers we worked with to build this project were incredible and done an outstanding job on the look and feel. 
 
 
-<div class="honeycombpic">
+<div class="honeycombpic-short">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/ddr.png?raw=true"/>
 </div>
