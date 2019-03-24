@@ -35,6 +35,6 @@ The following is the infrastructure setup.
 
 ##### Demo
 
-<div class="honeycombpic-long">
+<div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly.gif?raw=true" />
 </div>

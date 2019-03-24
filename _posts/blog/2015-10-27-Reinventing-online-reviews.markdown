@@ -36,6 +36,9 @@ You then output the data in the sentiment table through the above equations. The
 <img class="honeycomb-pic" src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/honeycomb.jpg" />
 </div>
 
+The following is another design I toyed with for some time:
+
 <div class="honeycombpic">
 <img class="honeycomb-pic" src="https://raw.githubusercontent.com/bawn92/bawn92.github.io/master/assets/img/amazonShop.jpg" />
 </div>
+
