@@ -27,7 +27,7 @@ Once I have my objects I assign a entity and there sentiment to each hexagon in 
 
 When all the required information is gathered and structured, I then draw the hexagons onto the canvas. One intertesing point is that each hexagon is drawn from two seperate hexagons. Using two hexagons gives the bar hexagon seen in the images.
 
-The following code is a snippet of how I draw the hexagons onto the canvas.
+The following code is how the hexagons are drawn onto the canvas.
 
 ```javascript
 function drawPloygon(hexagon) {
