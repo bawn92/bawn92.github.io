@@ -17,7 +17,7 @@ One of the challenging parts of this project was translating the vision I had of
 
 To achieve the the hexagon design I needed to figure out how to arrange hexagons such that the collection of them layout made a hexagon. A blog post from Amit Patel of Red Blog Games on hexagonal design provided the grounding information on drawing and arranging hexagons. The image below was the foundation for how I layed them out.
 
-<div class="honeycombpic-small">
+<div class="honeycombpic-square-small">
 <img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexagon-layout.png?raw=true" />
 </div>
 
