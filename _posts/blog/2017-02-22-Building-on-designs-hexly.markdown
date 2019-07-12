@@ -24,9 +24,9 @@ To achieve the the hexagon design I needed to figure out how to arrange hexagons
 
 I utilzied an object orientated approach for development. I instantiated a grid object. This grid object was assigned an array of hexagon objects, each with their own center coordinates.
 
-Once I had my grid of hexagons, I assigned them an entity and a sentiment score. To calculate what word should be assigned to what hexagon I use a distance formula. This ensured words with a higher sentiment, either positive or negative were further from the center. This calculation is trivial once each hexagon has its x,y coordinates for its location. I also colored the hexagons based on a normalized color spectrum to indicate the level of sentiment.
+Once I had my grid of hexagons, I assigned them an entity and a sentiment score. To calculate what word should be assigned to what hexagon I used a distance formula. This ensured words with a higher sentiment, either positive or negative were further from the center. This calculation is trivial once each hexagon has its x,y coordinates for its location. I also colored the hexagons based on a normalized color spectrum to indicate the level of sentiment.
 
-When all the required information is gathered and structured, I then draw the hexagons onto the canvas. One interesting point is that each hexagon is drawn from two separate hexagons. Using two hexagons gives the bar hexagon seen in the images.
+When all the required information is gathered and structured, I painted the hexagons onto the canvas. One interesting point is that each hexagon is drawn from two separate hexagons. Using two hexagons gives the bar hexagon seen in the images.
 
 The following is a snippet of how the hexagons are drawn onto the canvas.
 
@@ -54,13 +54,13 @@ The follwoing is screenshot of the application of the finished design.
 
 ##### Infrastructure
 
-Access to data is key for any modern web application. For this reason I allowed the latest trending hashtags to be analyized and visualized through the application. I feed a significant number of tweets from twitter into Watson API's and then visualized the results. This was all deployed on IBM Cloud using Cloud Foundry and its python runtime environment. 
+Access to data is key for any modern web application. For this reason I allowed the latest trending hashtags to be analyized and visualized through the application. I inputed a large quantity of tweets from twitter into Watson API's and then visualized the results. This was all deployed on IBM Cloud using Cloud Foundry and its python runtime environment. 
 
 <div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly-infra.png?raw=true" />
 </div>
 
-##### Demo
+##### Application Demo
 
 <div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexly.gif?raw=true" />
