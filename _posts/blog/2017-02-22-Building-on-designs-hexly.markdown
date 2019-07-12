@@ -7,27 +7,28 @@ categories: blog
 
 ##### Introduction
 
-In my "Reinventing online reviews" article I designed a unique method for categorizing and viewing online reviews. Since then, I have built a working prototype application for this design. I also added integration capabilities with Twitter to visualize sentiment for a given topic.
+In my “Reinventing online reviews” article I designed a unique method for categorizing and viewing online reviews. Since then, I have built a working prototype application for this design. I also added integration capabilities with Twitter to visualize sentiment for a given topic.
+Hexagon Geometry
 
 ##### Hexagon Geometry
 
 
-One of the challegening parts of this proejct was translating the vision I had of a hexagon structure into a tangiable web application. 
+One of the challenging parts of this project was translating the vision I had of a hexagon structure into a tangible web application.
 
-To achieve my grid of hexagons design I needed to learn how to arrange the hexagons into a specfic manner. A blog post from Amit Patel of Red Blog Games on hexagonal design provided alot of the base information on drawing and arranging hexagons. The image below was the foundation for what I built.
+To achieve the the hexagon design I needed to figure out how to arrange hexagons such that the collection of them layout made a hexagon. A blog post from Amit Patel of Red Blog Games on hexagonal design provided the grounding information on drawing and arranging hexagons. The image below was the foundation for how I layed them out.
 
 <div class="honeycombpic-small">
 <img class="honeycomb-pic" src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/hexagon-layout.png?raw=true" />
 </div>
 
 
-Within my code my I followed an object orientated approach for development. I instantiate a grid object. This grid object was assigned an array of hexagon objects, each with their own center coordinates.
+I utilzied an object orientated approach for development. I instantiated a grid object. This grid object was assigned an array of hexagon objects, each with their own center coordinates.
 
-Once I have my objects I assign a entity and there sentiment to each hexagon in the grid. To calculate what word should be assigned to what hexagon I use a distance formula. This ensures words with a higher sentiment positive or negative are further from the center. This calculation is trivial once each hexagon has its x,y coordinates for its location. I also colored the hexagons based on a normalized color spectrum to indicate the level of sentiment. 
+Once I had my grid of hexagons, I assigned them an entity and a sentiment score. To calculate what word should be assigned to what hexagon I use a distance formula. This ensured words with a higher sentiment, either positive or negative were further from the center. This calculation is trivial once each hexagon has its x,y coordinates for its location. I also colored the hexagons based on a normalized color spectrum to indicate the level of sentiment.
 
-When all the required information is gathered and structured, I then draw the hexagons onto the canvas. One intertesing point is that each hexagon is drawn from two seperate hexagons. Using two hexagons gives the bar hexagon seen in the images.
+When all the required information is gathered and structured, I then draw the hexagons onto the canvas. One interesting point is that each hexagon is drawn from two separate hexagons. Using two hexagons gives the bar hexagon seen in the images.
 
-The following code is how the hexagons are drawn onto the canvas.
+The following is a snippet of how the hexagons are drawn onto the canvas.
 
 ```javascript
 function drawPloygon(hexagon) {
