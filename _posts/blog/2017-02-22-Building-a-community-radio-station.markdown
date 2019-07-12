@@ -9,5 +9,5 @@ categories: blog
 
 
 <div class="honeycombpic-short">
-<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/ddr.png?raw=true"/>
+<img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/DDR720.gif?raw=true"/>
 </div>
