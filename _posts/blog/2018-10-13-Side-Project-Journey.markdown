@@ -7,7 +7,7 @@ categories: blog
 
 ##### Overview
 
- [The Gaelic Point](https://www.thegaelicpoint.ie) is a web application I developed for viewing Gaelic football data. The idea for the application, while important, was not the primary reason for taking on a new side project. The goal was to go through the journey and process of bootstrapping an idea from start to finish. 
+ The Gaelic Point is a web application I developed for viewing Gaelic football data. The idea for the application, while important, was not the primary reason for taking on a new side project. The goal was to go through the journey and process of bootstrapping an idea from start to finish. 
 
 This blog will share that journey and process, along with my thinking at the various stages throughout the development life cycle.
 
@@ -17,9 +17,7 @@ The first step is to choose an Idea. One major requirement I have for settling o
 
 ##### Design
 
-The second stage is to choose a tech stack. The technologies I choose for this project can be broken down into three sets. Those that I comfortable with and will allow me to work at a high velocity, which are Python, Django, GIT, Heroku. There are technologies which I have been wanting to try, for example, the Django Rest Framework. Lastly, there are the latest technologies, which help push the boundaries of my knowledge. [Barry Owens](http://www.barryowens.net/) a close friend who I have worked with on building the [Dublin Digital Radio](https://listen.dublindigitalradio.com/) website recommended trying Vue.JS & Nuxt.js. These JS libraries combined together neatly to solve the indexing and social sharing issues web crawlers have with some single page web frameworks.
-
-Once the tech stack is decided on I move onto the database design. I started by listing all the entities related to the project, along with the related attributes and finally mapping their relationships.
+The second stage is to choose a tech stack.
 
 <div class="honeycombpic-short">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/system-arch.png?raw=true"/>
@@ -90,9 +88,5 @@ Stats
 <div class="honeycombpic">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/points_charts.png?raw=true"/>
 </div>
-
- [The Gaelic Point, test it out! ](https://www.thegaelicpoint.ie)
-
-
 
 
