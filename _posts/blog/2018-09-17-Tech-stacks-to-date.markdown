@@ -5,7 +5,7 @@ date:   2018-09-17 21:51:11
 categories: blog
 ---
 
-To date these are the tech stacks & tools I have used in "production".
+To date these are the tech stacks & tools I have used in production.
 
 
 <div class="honeycombpic">
