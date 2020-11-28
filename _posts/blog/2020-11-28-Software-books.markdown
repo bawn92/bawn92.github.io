@@ -52,5 +52,6 @@ The first computer science book I deep dived into and implemented the algorithms
 </div>
 
 ``` 
-Q: How does a software project get to be a year late? A: One day at a time.
+Q: How does a software project get to be a year late? 
+A: One day at a time.
 ```
