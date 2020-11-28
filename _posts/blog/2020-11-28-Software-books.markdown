@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My favourite Software engineering books."
+title:  "My favourite software engineering books."
 date:   2020-11-28 13:26:00
 categories: blog
 ---
