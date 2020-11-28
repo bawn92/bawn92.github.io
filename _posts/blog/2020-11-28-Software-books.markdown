@@ -7,7 +7,7 @@ categories: blog
 
 ##### 1. Hackers & Painters - Paul Graham
 
-<div class="honeycombpic-small">
+<div class="honeycombpic-book">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-hackers-and-painters.jpg?raw=true"/>
 </div>
 
@@ -15,7 +15,7 @@ categories: blog
 
 ##### 2. The Cathedral & The Bazaar - Eric S. Raymond
 
-<div class="honeycombpic-small">
+<div class="honeycombpic-book">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-cathedral.jpg?raw=true"/>
 </div>
 
@@ -23,24 +23,21 @@ categories: blog
 
 ##### 3. The Open Organization - Jim Whitethrust
 
-<div class="honeycombpic-small">
+<div class="honeycombpic-book">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-open-org.jpg?raw=true"/>
 </div>
 
 "But what's less clear is that to truly perform at a peak level, simply defining a purpose is not enough. It's just a first step. What sets open organiszations apart, and what gives them a true competitive advantage, is that they also have embraced the idea that they need to activate the emotional passions and desires among their workers to actually reach that ultimate destination as defined by their purpose."
 
-
 "Purpose is a baseline. But when you add passion,it's like pouring gasoline on the fire.That's what can take your organization to the next level of performance and achievement."
 
 ##### 4. Modern Information Retrieval - Ricardo Baeza-Yates
 
-<div class="honeycombpic-small">
+<div class="honeycombpic-book">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-modern-information.jpg?raw=true"/>
 </div>
 
-```HTML
 This is the first computer science book I deep dived into and explored / implemented the algorithms dicssued within.
-``` 
 
 ##### 5. The Mythical Man-Month - Fred Brooks
 
@@ -48,7 +45,5 @@ This is the first computer science book I deep dived into and explored / impleme
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-mytical.png?raw=true"/>
 </div>
 
-```HTML
-Q: How does a software project get to be a year late? 
-A: One day at a time.
-```
+"Q: How does a software project get to be a year late? 
+A: One day at a time."

@@ -1253,6 +1253,11 @@ form {
     height: 100%;
     margin-left: auto;
     margin-right: auto; }
+  .honeycombpic-book img {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto; }
   .honeycombpic-square-small img {
       width: 100%;
       height: 100%;
@@ -1309,6 +1314,13 @@ form {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto; }
+  .honeycombpic-book {
+      width: 600px;
+      height: 800px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto; }
 
   .honeycombpic-square-small {
       width: 550px;
@@ -1377,6 +1389,11 @@ form {
     height: 550px;
     margin-bottom: 30px;
     margin-top: 30px; }
+  .honeycombpic-book {
+      width: 600px;
+      height: 800px;
+      margin-bottom: 30px;
+      margin-top: 30px; }
   .honeycombpic-square-small {
       width: 600px;
       height: 600px;
@@ -1392,6 +1409,11 @@ form {
     height: 100%;
     margin-left: auto;
     margin-right: auto; }
+  .honeycombpic-book img {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto; }
   .honeycombpic-short {
     width: 750px;
     height: 500px;
