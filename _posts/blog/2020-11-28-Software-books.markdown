@@ -19,10 +19,8 @@ categories: blog
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-cathedral.jpg?raw=true"/>
 </div>
 
-```
-"You often don't really understand the problem 
-until the first time you implement a solution."
-```
+>"You often don't really understand the problem 
+> until the first time you implement a solution."
 
 ##### 3. The Open Organization - Jim Whitethrust
 
