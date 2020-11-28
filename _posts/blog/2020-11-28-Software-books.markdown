@@ -11,7 +11,13 @@ categories: blog
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-hackers-and-painters.jpg?raw=true"/>
 </div>
 
-> "People who do good work often think that whatever they’re working on is no good. Others see what they’ve done and think it’s wonderful, but the creator sees nothing but flaws. This pattern is no coincidence: worry made the work good."
+``` 
+"People who do good work often think that whatever
+they’re working on is no good. Others see what
+they’ve done and think it’s wonderful, but the
+creator sees nothing but flaws. This pattern 
+is no coincidence: worry made the work good."
+``` 
 
 ##### 2. The Cathedral & The Bazaar - Eric S. Raymond
 
@@ -50,7 +56,9 @@ next level of performance and achievement.
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-modern-information.jpg?raw=true"/>
 </div>
 
-The first computer science book I deep dived into and explored/ implemented the algorithms and methods dicssued.
+```HTML
+This is the first computer science book I deep dived into and explored / implemented the algorithms dicssued within.
+``` 
 
 ##### 5. The Mythical Man-Month - Fred Brooks
 
@@ -58,7 +66,7 @@ The first computer science book I deep dived into and explored/ implemented the 
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-mytical.png?raw=true"/>
 </div>
 
-``` 
+```HTML
 Q: How does a software project get to be a year late? 
 A: One day at a time.
 ```
