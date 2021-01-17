@@ -41,7 +41,7 @@ This is the first computer science book I deep dived into and explored / impleme
 
 ##### 5. The Mythical Man-Month - Fred Brooks
 
-<div class="honeycombpic-short">
+<div class="honeycombpic-table">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-mytical.png?raw=true"/>
 </div>
 
