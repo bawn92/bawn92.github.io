@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Machine Learning Mind Map"
+title:  "Mind Map: Machine Learning Mind Map"
 date:   2015-09-26 12:51:11
 categories: blog
 ---
