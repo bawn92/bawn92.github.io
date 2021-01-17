@@ -7,7 +7,7 @@ categories: blog
 
 ##### Overview
 
- The Gaelic Point is a web application I developed for viewing Gaelic football data. The idea for the application, while important, was not the primary reason for taking on a new side project. The goal was to go through the journey and process of bootstrapping an idea from start to finish.
+ The Gaelic Point was a small web application I developed for viewing Gaelic football data. The idea for the application, while important, was not the primary reason for taking on a new side project. The goal was to go through the process of bootstrapping a web application from start to finish. 
 
 This blog will share that journey and process, along with my thinking at the various stages throughout the development life cycle.
 
@@ -17,13 +17,13 @@ The first step is to choose an idea. One major requirement I have for settling o
 
 ##### Design
 
-The second stage is to choose a tech stack. CRUD and ACID functionality were key features required to my application. This was the reasons for choosing DJANGO and Postgres. I wanted to experiment with a new UI framework which is why I selected Vue.JS.
+The second stage is to choose a tech stack. CRUD and ACID functionality was core to the project. These were the primary reasons for choosing Django and Postgres. I wanted to experiment with a new UI framework, which is why I selected Vue.JS.
 
 <div class="honeycombpic-short">
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/system-arch.png?raw=true"/>
 </div>
 
-Once the tech stack was decided on I start the database design. I list all the entities related to the project. Then the related attributes and finally mapping the relationships between the entities.
+I then started the database design. I listed all the entities related to the project, defining attributes and types, and finally mapping the relationships.
 
 
 <div class="honeycombpic-long">
@@ -33,15 +33,15 @@ Once the tech stack was decided on I start the database design. I list all the e
 
 ##### Development
 
-The third stage is to scaffold the application. I started the development with the database infrastructure. Then the accompanying CRUD API's for the entities. Modeling the database entities and API creation were effortless using Django and the Django Rest Framework. Django has a mature database migrations tool which allows for fast entity creation. The Django Rest Framework has estbalished patterns for building API's which I utilized.
+The third stage was to scaffold the application. I started the development with the database infrastructure. Then I built the accompanying Rest API's. Modeling the database entities and API creation was effortless using Django and the Django Rest Framework. Django has a mature database migrations tool that allows for fast entity creation. The Django Rest Framework has well-established patterns for building API's which I utilized.
 
-The next section of the application was the front end. This part was the most labor intensive. I had never used the Vue.js framework before. It took some time to grasp the patterns and layouts. Vue has a unique single-file layout where HTML, CSS, and JS all live inside the same file. Vue is a very opinionated library. It has pre-defined functions which must be utilized to complete specific tasks. Calling external services via its annotated method for server-side rendering is a prime example of this opinionated style. This was great in the long term as it enforces high code quality. The steep learning curve definitely paid dividend.
+The next section of the application was the front end. This part was the most labor-intensive. I had never used the Vue.js framework before. It took some time to grasp the patterns and layouts. Vue has a unique single file layout where HTML, CSS, and JS all live inside the same file. Vue is a very opinionated library. It has pre-defined functions that enable specific tasks. Calling external services via its annotated method for server-side rendering is a prime example. This pattern was great in the long term as it enforces high code quality.
 
 ##### Deployment & Release
 
-The fourth stage was the deployment and release. The cloud platform I chose was Heroku. Heroku’s PAAS allows for easy integration with Github to build a CI pipeline. From the outset of the project, all the code was pushed to Github. The code goes through the Heroku pipeline and propagates to a staging instance. At release, I created a separate production instance. Once I validate the code on the staging instance, I promote the code to production. This is all aided by Heroku’s pipeline tooling.
+The fourth stage was the deployment and release. The cloud platform I chose was Heroku. Heroku’s PAAS allows for easy integration with Github to build a CI pipeline. The pipeline automatically propagates the code to the staging instance for every commit. Once tested and verified I push to the production instance.
 
-While my staging instacne runs on Heroku’s free instance, production is running on the Hobby level, which provides insights into performance. I also connected Sentry for automated error handling and reporting. Sentry is extremely useful because it allows for weekly email reports on errors seen along with alerts for specific issues.
+I then connected Sentry for automated error handling and reporting. Sentry is extremely useful because it sends weekly email reports on errors seen and alerts for specific issues.
 
 ##### SEO
 

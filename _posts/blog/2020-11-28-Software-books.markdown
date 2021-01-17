@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My favourite software engineering books."
+title:  "My favourite software engineering books"
 date:   2020-11-28 13:26:00
 categories: blog
 ---
@@ -37,7 +37,7 @@ categories: blog
 <img src="https://github.com/bawn92/bawn92.github.io/blob/master/assets/img/book-modern-information.jpg?raw=true"/>
 </div>
 
-This is the first computer science book I deep dived into and explored / implemented the algorithms dicssued within.
+This book was the first computer science book I deep dived into. I explored and implemented many of the algorithms described within.
 
 ##### 5. The Mythical Man-Month - Fred Brooks
 
