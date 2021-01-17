@@ -5,7 +5,7 @@ date:   2020-12-05 13:26:00
 categories: blog
 ---
 
-A mind map I built up while pre-paring for software engineering interviews.
+A mind map I built up while stuying for the software engineering interview.
 
 
 <div class="honeycombpic">
